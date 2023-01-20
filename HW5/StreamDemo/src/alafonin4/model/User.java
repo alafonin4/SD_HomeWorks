@@ -39,7 +39,7 @@ public class User {
         String[] lastNames = {"Иванов", "Смирнов", "Кузнецов", "Попов", "Васильев", "Петров", "Соколов", "Лазарев", "Медведев", "Ершов"};
         String randomLastName = lastNames[random.nextInt(lastNames.length)];
         int age = random.nextInt(1, 150);
-        String[] loc = Locale.getISOCountries();
+        String[] loc = {"Русские", "Узбеки", "Беларусы", "Таджики", "Молдоване", "Китайцы", "Японцы"};
         String location = loc[random.nextInt(loc.length)];
         return new User(id, randomFirstName, randomLastName, age, location);
     }
